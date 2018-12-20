@@ -24,11 +24,11 @@ chrome.runtime.onMessage.addListener(
                     $("#helper-center").remove();
                     $(".app_container").prepend('<div id="helper-center" style="display: block; order: 9999;"><div class="LRbl LRbm LRbn LRbo LRbp LRbq LRat LRbr LRbs"><div class="app_view_outer" style="display: block;"><div class="iframe_app_view_wrapper"><header class="app_header"><img class="logo" src="https://raw.githubusercontent.com/alffox/helper-center/master/app/images/icon-32.png?sanitize=true"><h3 class="title">Helper Center</h3></header><div class="app_view_wrapper"><div class="app_view apps_ticket_sidebar box">\
                         <div>Account Code: <span>' + accountCode + '</span></div><br>\
-                        <div>LESA-like ticket name: <span>' + LESAlikeFormat + '</span></div><br>\
                         <a href="' + patcherURL + '" target="_blank">Go to Project on Patcher Portal >></a><br><br>\
                         Internal URL: <a href="' + currentURL + '" target="_blank">' + currentURL + '</a><br><br>\
                         Customer\'s URL: <a href="' + customerURL + '" target="_blank">' + customerURL + '</a><br><br>\
                         <a href="' + projectInfoURL + '" target="_blank">Go to Project details >></a><br><br>\
+                        <div>LESA-like ticket name: <span>' + LESAlikeFormat + '</span></div><br>\
                         </div></div></div></div></div></div>');
                 }
             });
