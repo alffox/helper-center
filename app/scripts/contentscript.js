@@ -7,6 +7,17 @@ chrome.runtime.onMessage.addListener(
             const ticketID = currentURL.substr(currentURL.lastIndexOf('/') + 1);
             const ticketURL = "https://liferay-support.zendesk.com/api/v2/tickets/" + ticketID + ".json";
             const customerURL = "https://help.liferay.com/hc/en-us/requests/" + ticketID;
+
+           $.ajax({
+                url: `${ticketURL}`,
+                method: "GET",
+                error: function() {
+                    console.log("error");
+                },
+                success: function(data) {
+                    console.log(data);
+                }
+            });
         }
     });
 
