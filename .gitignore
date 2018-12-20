@@ -1,0 +1,5 @@
+build_packages.sh
+dist/
+node_modules/
+packages/
+web-ext-artifacts/

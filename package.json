@@ -1,0 +1,12 @@
+{
+  "name": "Helper Center",
+  "version": "1.0.0",
+  "description": "A browser plugin helper for the Liferay Help Center support hub",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  }
+}

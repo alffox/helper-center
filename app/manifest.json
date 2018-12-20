@@ -1,0 +1,38 @@
+{
+  "name": "Helper Center",
+  "short_name": "help-center",
+  "description": "A browser plugin helper for the Liferay Help Center support hub",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "icons": {
+    "16": "images/icon-16.png",
+    "96": "images/icon-96.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png"
+    },
+    "default_title": "Helper Center",
+    "default_popup": "pages/popup.html"
+  },
+  "background": {
+  "scripts": ["scripts/background.js"]
+},
+  "content_scripts": [
+    {
+      "matches": ["https://liferay-support.zendesk.com/agent/tickets/*"],
+      "js" : [
+        "libs/jquery-3.3.1.min.js",
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+    "https://*/",
+    "tabs"
+  ]
+}
