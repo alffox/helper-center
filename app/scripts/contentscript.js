@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener(
                     console.log("error");
                 },
                 success: function(data) {
-                    console.log(data);
+                    const accountCode = data.ticket.fields[4].value;
                 }
             });
         }
