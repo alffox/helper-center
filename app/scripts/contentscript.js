@@ -5,6 +5,7 @@ chrome.runtime.onMessage.addListener(
 
             const currentURL = window.location.href;
             const ticketID = currentURL.substr(currentURL.lastIndexOf('/') + 1);
+            const ticketURL = "https://liferay-support.zendesk.com/api/v2/tickets/" + ticketID + ".json";
         }
     });
 
