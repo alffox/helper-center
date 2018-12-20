@@ -18,6 +18,7 @@ chrome.runtime.onMessage.addListener(
                     const accountCode = data.ticket.fields[4].value;
                     const OSBKey = data.ticket.custom_fields[1].value;
                     const patcherURL = "https://patcher.liferay.com/group/guest/patching/-/osb_patcher/accounts/view?_1_WAR_osbpatcherportlet_patcherBuildAccountEntryCode=" + accountCode;
+                    const LESAlikeFormat = accountCode + "-" + ticketID;
                 }
             });
         }
