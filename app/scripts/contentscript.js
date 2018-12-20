@@ -16,6 +16,7 @@ chrome.runtime.onMessage.addListener(
                 },
                 success: function(data) {
                     const accountCode = data.ticket.fields[4].value;
+                    const OSBKey = data.ticket.custom_fields[1].value;
                 }
             });
         }
