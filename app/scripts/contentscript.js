@@ -4,6 +4,7 @@ chrome.runtime.onMessage.addListener(
             console.log(request.url);
 
             const currentURL = window.location.href;
+            const ticketID = currentURL.substr(currentURL.lastIndexOf('/') + 1);
         }
     });
 
